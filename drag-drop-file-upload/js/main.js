@@ -24,6 +24,13 @@ var direFileimg = upmsgfoo.querySelector('.directoryfileimg')
 $(upmsgfoo).remove();
 
 
+// Initialize sortable functionality
+$(function () {
+    $("#uploadPreview").sortable();
+    $("#uploadPreview").disableSelection();
+});
+
+
 // Function to append image Html preview 
 function appendPreview(file) {
     // Html Add Preview img
